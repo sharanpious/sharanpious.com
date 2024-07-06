@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #000;
-  color: #ffffff;
+  color: lightgray;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -117,7 +117,7 @@ a {
   transition: background-color 0.3s, color 0.3s;
 } */
 
-button {
+.test_3 {
   background-color: #000000;
   text-align: center;
   position: relative;
@@ -133,11 +133,12 @@ button {
   height: 9vh;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0 0 rgba(255, 144, 77, 0), 0 0 0 rgba(255, 222, 89, 0);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-    box-shadow 0.5s ease-in-out;
+    box-shadow 2s ease;
 }
 
-button::before {
+.test_3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -149,7 +150,7 @@ button::before {
   transition: transform 0.3s;
 }
 
-button span {
+.test_3 span {
   position: relative;
   z-index: 2;
   font-size: 2.5vh;
@@ -164,11 +165,57 @@ button span {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-.test_2 {
+.test_4 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.test_2 {
+  text-align: center;
+  position: relative;
+  width: 10vw;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 2em;
+  z-index: 2;
+  overflow: hidden;
+  padding: 0.2vw;
+  height: 7vh;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+}
+
+.test_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffde59, #ff904d);
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.test_2 span {
+  z-index: 2;
+  background-color: #000;
+  font-size: 2vh;
+  font-weight: 800;
+  border-radius: 48vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 /* button:hover span {
@@ -176,10 +223,15 @@ button span {
 /* opacity: 0.8; */
 /* } */
 
-button:hover {
+.test_2 span:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.test_3:hover {
+  animation: glow 2s infinite alternate;
   box-shadow: 3px 11px 15px rgba(255, 144, 77, 0.8),
     -1px -5px 15px rgba(255, 222, 89, 0.8);
-  animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
@@ -515,30 +567,36 @@ button:hover {
 } */
 
 .bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 3vw;
+  margin-top: 5vh;
 }
 
 .bottom-right {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-right: 3vw;
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid lightgray;
   width: 100%;
-  height: 20vh;
+  height: fit-content;
   color: white;
   font-size: 2vw;
 }
 
 footer h3 {
   margin: 0;
+  margin-top: 7vh;
 }
-
-footer p {
+.bottom-right div {
   display: flex;
   align-items: center;
   justify-content: center;
