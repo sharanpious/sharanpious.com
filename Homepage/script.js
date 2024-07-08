@@ -73,7 +73,7 @@ function isInMiddleOfScreen(element) {
 
 // Function to add hover effect when the element is in the middle of the screen
 function applyHoverEffect() {
-  document.querySelectorAll('.content_1, .content6 p').forEach((element) => {
+  document.querySelectorAll('.content6 p').forEach((element) => {
     if (isInMiddleOfScreen(element)) {
       element.classList.add('hover');
     } else {
