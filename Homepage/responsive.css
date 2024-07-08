@@ -558,52 +558,27 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 991px) and (max-width: 1300px) {
-  .top {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-  }
-
-  .top .logo {
-    justify-content: flex-start;
-    margin: 0;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  body {
+    padding-top: 124px;
   }
 
   .navbar a {
-    margin: 0 2vh;
     font-size: 1em;
   }
-
-  .navbar a:hover,
-  .navbar a.active:hover {
-    padding-bottom: 18px;
-    border-bottom: 2px solid #ff914d;
+  
+  .test_2 {
+    width: 15vw;
+    height: 8vh;
   }
 
-  .test_4 {
-    display: flex;
-    justify-content: flex-end;
+  .test_2 span {
+    font-size: 1.2em;
   }
 
-  .hamburger {
-    display: none;
+  #test {
+    height: 80px;
   }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    margin: 0vh 5vw 10vh 5vw;
-  }
-
-  .content_1,
+  
   .about,
   .pic,
   .pic_in,
@@ -611,7 +586,6 @@
   .content2,
   .content4,
   .content5,
-  .bottom-left,
   .bottom-right,
   footer {
     width: 100%;
@@ -619,7 +593,6 @@
     margin: 10px 0;
     padding: 10px;
   }
-
   
   .myself {
     margin-top: 50vh;
@@ -631,13 +604,6 @@
     border-radius: 1.5vw;
     margin-left: 1vw;
     padding: 0.5vw;
-  }
-
-  .content_1 {
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5vw;
-    border: 0.2vw solid lightgrey;
   }
 
   .left {
@@ -654,13 +620,13 @@
   }
 
   .content p {
-    margin: 5vh 1vw;
-    font-size: 1.2em;
+    padding: 0;
+    margin: 5vw 0;
   }
 
   .right .content_1 {
     width: 100%;
-    height: auto;
+    height: 60%;
   }
 
   .test_3 {
@@ -669,7 +635,7 @@
     text-decoration: none;
     border-radius: 50vw;
     padding: 0.3vw;
-    height: 7vh;
+    height: 10vh;
   }
 
   .test_3::before {
@@ -702,7 +668,7 @@
   .content3 h1,
   .content3 h2,
   .section h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -711,7 +677,7 @@
   }
 
   .content3 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 1vh;
   }
 
@@ -733,13 +699,18 @@
     margin-bottom: 0;
   }
 
+  .content6 h2 {
+    margin: 0;
+    margin-bottom: 8vh;
+  }
+
   .content6 p {
     text-align: left;
     width: 100%;
   }
 
   .item {
-    height: 5vh;
+    height: 7vh;
     margin: 0.5vw auto;
     padding: 0.1vw;
     font-size: 0.8em;
@@ -768,9 +739,9 @@
   }
 
   .content7 {
-    height: auto;
-    margin-top: 1vh;
-    margin-bottom: 20vh;
+    height: 40vh;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
     padding: 0;
   }
 
@@ -778,7 +749,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 20vh;
+    height: 100%;
   }
 
   .profile {
@@ -795,11 +766,7 @@
     text-align: center;
   }
 
-  #test {
-    height: 50px;
-  }
-
   footer {
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 }

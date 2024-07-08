@@ -6,6 +6,7 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
     const targetElement = document.getElementById(targetId);
     
     const isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
+    // const isLargeScreen = window.matchMedia("(min-width:991px) and (max-width: 1300px)").matches;
     const isMenuScreen = window.matchMedia("(max-width: 991px)").matches;
 
     let offset = 124;
@@ -13,6 +14,9 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
     if (isSmallScreen) {
       offset = 74
     }
+    // else if (isLargeScreen) {
+    //   offset = 76
+    // }
 
     // if (isSmallScreen) {
     //   offset = 100;
