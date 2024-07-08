@@ -64,55 +64,27 @@ function toggleMenu() {
   hamburger.classList.toggle("active");
 }
 
-// document.querySelectorAll(".navbar a").forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
+// Function to check if an element is in the middle of the screen
+function isInMiddleOfScreen(element) {
+  const rect = element.getBoundingClientRect();
+  const middleOfScreen = window.innerHeight / 2;
+  return rect.top <= middleOfScreen && rect.bottom >= middleOfScreen;
+}
 
-//     document
-//       .querySelectorAll(".navbar a")
-//       .forEach((link) => link.classList.remove("active"));
-//     this.classList.add("active");
+// Function to add hover effect when the element is in the middle of the screen
+function applyHoverEffect() {
+  document.querySelectorAll('.content_1, .content6 p').forEach((element) => {
+    if (isInMiddleOfScreen(element)) {
+      element.classList.add('hover');
+    } else {
+      element.classList.remove('hover');
+    }
+  });
+}
 
-//     const targetId = this.getAttribute("href").substring(1);
-//     const targetElement = document.getElementById(targetId);
+// Listen for scroll and resize events
+window.addEventListener('scroll', applyHoverEffect);
+window.addEventListener('resize', applyHoverEffect);
 
-//     if (targetId === "home") {
-//       window.scrollTo({
-//         top: 0,
-//         behavior: "smooth",
-//       });
-//     } else {
-//       window.scrollTo({
-//         top: targetElement.offsetTop - 100,
-//         behavior: "smooth",
-//       });
-//     }
-//   });
-// });
-
-// document.addEventListener("scroll", function () {
-//     const sections = document.querySelectorAll(
-//       ".section, .content, .myself, .content2, .content3, .content4, .content5"
-//     );
-//     const navbarLinks = document.querySelectorAll(".navbar a");
-
-//     let currentSectionId = "";
-
-//     if (scrollY === 0) {
-//       currentSectionId = "home";
-//     } else {
-//       sections.forEach((section) => {
-//         const sectionTop = section.offsetTop - 100;
-//         if (scrollY >= sectionTop) {
-//           currentSectionId = section.getAttribute("id");
-//         }
-//       });
-//     }
-
-//     navbarLinks.forEach((link) => {
-//       link.classList.remove("active");
-//       if (link.getAttribute("href").substring(1) === currentSectionId) {
-//         link.classList.add("active");
-//       }
-//     });
-//   });
+// Initial call to applyHoverEffect to check the elements on page load
+applyHoverEffect();
