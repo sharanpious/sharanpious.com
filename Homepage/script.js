@@ -5,23 +5,61 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
     const targetId = this.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
 
-    // To make it scroll to the top most when the user presses the home
-    if (targetId === "home") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-    // else scrolls to the respective section with as offset
-    else {
-      window.scrollTo({
-        top: targetElement.offsetTop - 95,
-        behavior: "smooth",
-      });
+    const isSmallScreen = window.matchMedia("(max-width: 599px)").matches;
+    const isMediumScreen = window.matchMedia(
+      "(min-width: 600px) and (max-width: 991px)"
+    ).matches;
+
+    let offset = 100;
+
+    // if (isSmallScreen) {
+    //   offset = 100;
+    // } else if (isMediumScreen) {
+    //   offset = 100;
+    // }
+
+    // Scrolls to the respective section with an offset
+    window.scrollTo({
+      top: targetElement.offsetTop - offset,
+      behavior: "smooth",
+    });
+
+    // Close the hamburger menu on click (for small and medium screens)
+    if (isSmallScreen || isMediumScreen) {
+      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".hamburger").classList.remove("active");
     }
   });
 });
 
+// Added event listener to logo
+document.getElementById("logo-link").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const isSmallScreen = window.matchMedia("(max-width: 599px)").matches;
+  const isMediumScreen = window.matchMedia(
+    "(min-width: 600px) and (max-width: 991px)"
+  ).matches;
+
+  // Scroll to the top of the page, considering body padding
+  window.scrollTo({
+    top: 0, // Adjust this value if you have additional padding/margin on the body
+    behavior: "smooth",
+  });
+
+  // Close the hamburger menu on click (for small and medium screens)
+  if (isSmallScreen || isMediumScreen) {
+    document.querySelector(".navbar").classList.remove("active");
+    document.querySelector(".hamburger").classList.remove("active");
+  }
+});
+
+function toggleMenu() {
+  const navbar = document.querySelector(".navbar");
+  const hamburger = document.querySelector(".hamburger");
+  navbar.classList.toggle("active");
+  hamburger.classList.toggle("active");
+}
 
 // document.querySelectorAll(".navbar a").forEach((anchor) => {
 //   anchor.addEventListener("click", function (e) {
@@ -54,9 +92,9 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
 //       ".section, .content, .myself, .content2, .content3, .content4, .content5"
 //     );
 //     const navbarLinks = document.querySelectorAll(".navbar a");
-  
+
 //     let currentSectionId = "";
-  
+
 //     if (scrollY === 0) {
 //       currentSectionId = "home";
 //     } else {
@@ -67,7 +105,7 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
 //         }
 //       });
 //     }
-  
+
 //     navbarLinks.forEach((link) => {
 //       link.classList.remove("active");
 //       if (link.getAttribute("href").substring(1) === currentSectionId) {
@@ -75,4 +113,3 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
 //       }
 //     });
 //   });
-  
