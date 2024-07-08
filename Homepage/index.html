@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sharanpious</title>
     <link href="styles.css" rel="stylesheet" />
+    <!-- <link href="test.css" rel="stylesheet" /> -->
+    <link href="responsive.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div class="top">
       <div class="logo">
-        <a href="#home">
+        <a id="logo-link">
           <img id="test" src="../Images/logo.png" alt="img" height="70px" />
         </a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
       <nav class="navbar">
         <a href="#ccc">CCC</a>
@@ -25,29 +31,28 @@
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="#" class="test_4"
-        ><button type="button" class="test_2">
+      <a href="#" class="test_4">
+        <button type="button" class="test_2">
           <span>JOIN THE CCC</span>
-        </button></a
-      >
+        </button>
+      </a>
     </div>
 
     <div id="home" class="content">
       <div class="container">
         <div class="left">
-          <!-- <div class="logo">
-          <img id="test" src="Logo.png" alt="img">
-        </div> -->
-          <h2>Free Fitness Copy Call Challenge (CCC)</h2>
+          <h2>Big Idea<br />Second Line</h2>
           <p>
-            Discover a new 3 call cheatcode to bring more profit fast. Avoid
-            cookie-cutter approaches using the 6 Pack 6 Figures Framework.
+            Discover a <b>new 3 call cheatcode</b> to bring
+            <b>more profit fast.</b> Avoid cookie-cutter approaches using the
+            step by step <br /><b>CCC Framework</b>.
           </p>
-          <a href="#"
-            ><button type="button" class="test_3">
+
+          <a href="#">
+            <button type="button" class="test_3">
               <span>JOIN THE CCC</span>
-            </button></a
-          >
+            </button>
+          </a>
         </div>
         <div class="right">
           <video class="content_1" src="video_1.mp4"></video>
@@ -58,51 +63,41 @@
     <div id="ccc" class="section">
       <h1 class="heading_1">#Section Title</h1>
       <p class="text_1">Add a little bit of body text</p>
-      <a href="#"
-        ><button type="button" class="test_3">
+      <a href="#">
+        <button type="button" class="test_3">
           <span>JOIN THE CCC</span>
-        </button></a
-      >
+        </button>
+      </a>
     </div>
 
     <div id="myself" class="myself">
       <h2>But who am I?</h2>
       <div class="about">
         <div class="pic">
-          <img class="profle" src="img_1" />
+          <img class="profle" src="pic_2" width="200px" />
         </div>
         <p>Hii, this is me.</p>
       </div>
-
       <div class="content2">
         <p>
           After 3+ years in fitness, I finally put all the insights I've gained
           into this new unique process...
         </p>
         <div class="arrow"></div>
-        <!-- <a href="#ccc">
-        <svg class="arrows" width="60" height="112" viewBox="0 0 60 112">
-          <path class="a1" d="M30 0 L15 20 L45 20 Z"></path>
-          <path class="a2" d="M30 36 L15 56 L45 56 Z"></path>
-          <path class="a3" d="M30 72 L15 92 L45 92 Z"></path>
-        </svg>
-        </a> -->
-
         <h2>The 6 Pack 6 Figures Framework</h2>
-        <div class="pic_2 right">
-          <img class="pic_in" src="img_2.png" />
+        <div>
+          <img class="pic_in content_1" src="img_2.png" />
         </div>
-        <a href="#"
-          ><button type="button" class="test_3">
+        <a href="#">
+          <button type="button" class="test_3">
             <span>JOIN THE CCC</span>
-          </button></a
-        >
+          </button>
+        </a>
       </div>
     </div>
 
     <div id="process" class="content3">
       <h1>The 3-Day Copy Call Challenge</h1>
-
       <div class="day1">
         <div class="left content6">
           <h2>Day 1 - Marketing Strategy</h2>
@@ -116,11 +111,10 @@
             <p>Find low hanging fruits</p>
           </div>
         </div>
-        <div class="right content7">
-          <img class="content_1" src="img_3.png" />
+        <div class="content7">
+          <img class="content_1 content8" src="img_3.png" />
         </div>
       </div>
-
       <div class="day2">
         <div class="left content6">
           <h2>Day 2 - Customer Journey</h2>
@@ -134,11 +128,10 @@
             <p>Build the ultimate map</p>
           </div>
         </div>
-        <div class="right content7">
-          <img class="content_1" src="img_4.png" />
+        <div class="content7">
+          <img class="content_1 content8" src="img_4.png" />
         </div>
       </div>
-
       <div class="day3">
         <div class="left content6">
           <h2>Day 3 - 6 Pack 6 Figures Offer</h2>
@@ -152,11 +145,10 @@
             <p>Guarantee your win by working with me</p>
           </div>
         </div>
-        <div class="right content7">
-          <img class="content_1" src="img_5.png" />
+        <div class="content7">
+          <img class="content_1 content8" src="img_5.png" />
         </div>
       </div>
-
       <div>
         <a href="#">
           <button type="button" class="test_3">
@@ -169,46 +161,45 @@
     <div id="reviews" class="section">
       <h1>See What Other People Exactly Like You Are Saying</h1>
       <div class="content4"></div>
-      <a href="#"
-        ><button type="button" class="test_3">
+      <a href="#">
+        <button type="button" class="test_3">
           <span>JOIN THE CCC</span>
-        </button></a
-      >
+        </button>
+      </a>
     </div>
 
     <div id="faq" class="section">
       <h1>Frequently Asked Questions</h1>
       <div class="content5"></div>
-      <a href="#"
-        ><button type="button" class="test_3">
+      <a href="#">
+        <button type="button" class="test_3">
           <span>JOIN THE CCC</span>
-        </button></a
-      >
+        </button>
+      </a>
     </div>
 
     <footer>
       <div class="bottom-left">
         <div class="logo">
-          <a href="http://127.0.0.1:5500/Homepage/index.html">
+          <a href="/Homepage/index.html">
             <img id="test" src="../Images/logo.png" alt="img" height="100px" />
           </a>
         </div>
       </div>
       <div class="bottom-right">
-        <!-- <h3>Socials</h3> -->
         <div>
           <a href="https://www.linkedin.com" target="blank" class="shadow">
-            <i class="fa-brands fa-linkedin a"></i
-          ></a>
+            <i class="fa-brands fa-linkedin a"></i>
+          </a>
           <a href="https://instagram.com" target="blank" class="shadow">
-            <i class="fa-brands fa-instagram a"></i
-          ></a>
+            <i class="fa-brands fa-instagram a"></i>
+          </a>
           <a href="https://github.com" target="blank" class="shadow">
-            <i class="fa-brands fa-github a"></i
-          ></a>
+            <i class="fa-brands fa-github a"></i>
+          </a>
           <a href="https://www.youtube.com" target="blank" class="shadow">
-            <i class="fa-brands fa-youtube a"></i
-          ></a>
+            <i class="fa-brands fa-youtube a"></i>
+          </a>
         </div>
       </div>
     </footer>
