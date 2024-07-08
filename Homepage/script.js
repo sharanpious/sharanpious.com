@@ -4,13 +4,15 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
 
     const targetId = this.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
+    
+    const isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
+    const isMenuScreen = window.matchMedia("(max-width: 991px)").matches;
 
-    const isSmallScreen = window.matchMedia("(max-width: 599px)").matches;
-    const isMediumScreen = window.matchMedia(
-      "(min-width: 600px) and (max-width: 991px)"
-    ).matches;
+    let offset = 124;
 
-    let offset = 100;
+    if (isSmallScreen) {
+      offset = 74
+    }
 
     // if (isSmallScreen) {
     //   offset = 100;
@@ -25,7 +27,7 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
     });
 
     // Close the hamburger menu on click (for small and medium screens)
-    if (isSmallScreen || isMediumScreen) {
+    if (isMenuScreen) {
       document.querySelector(".navbar").classList.remove("active");
       document.querySelector(".hamburger").classList.remove("active");
     }
@@ -36,10 +38,7 @@ document.querySelectorAll(".navbar a").forEach((anchor) => {
 document.getElementById("logo-link").addEventListener("click", function (e) {
   e.preventDefault();
 
-  const isSmallScreen = window.matchMedia("(max-width: 599px)").matches;
-  const isMediumScreen = window.matchMedia(
-    "(min-width: 600px) and (max-width: 991px)"
-  ).matches;
+  const isMenuScreen = window.matchMedia("(max-width: 991px)").matches;
 
   // Scroll to the top of the page, considering body padding
   window.scrollTo({
@@ -48,7 +47,7 @@ document.getElementById("logo-link").addEventListener("click", function (e) {
   });
 
   // Close the hamburger menu on click (for small and medium screens)
-  if (isSmallScreen || isMediumScreen) {
+  if (isMenuScreen) {
     document.querySelector(".navbar").classList.remove("active");
     document.querySelector(".hamburger").classList.remove("active");
   }
