@@ -408,14 +408,42 @@ body {
 
 /* Price Increase */
 
-/* Code for Price Increase Section goes here */
+.price-increase h1 {
+  font-size: 3em;
+}
+
+.price-increase p1 {
+  font-size: 1.15em;
+}
+
+.price-increase {
+  font-family: Arial, sans-serif;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.5;
+  padding: 0 5vw;
+}
+
+
 
 /* ================================================= */
 
 /* Golden Ticket */
 
-/* Code for Golden Ticket Section goes here */
+.golden-ticket h1 {
+  font-size: 3em;
+}
 
+.golden-ticket {
+  font-family: Arial, sans-serif;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  font-size: 1.4em;
+  line-height: 1.5;
+  padding: 0 5vw;
+}
+        
 /* ================================================= */
 
 /* Everything */
