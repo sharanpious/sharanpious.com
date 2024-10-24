@@ -453,7 +453,87 @@ body {
 
 /* Bonus */
 
-/* Code for Bonus Section goes here */
+.bonus {
+  font-family: Arial, sans-serif;
+  /* font-weight: bold; */
+  margin-top: 20px;
+  font-size: 1.4em;
+  margin: 20px 5% 0 5%;
+  line-height: 1.5;
+  /* padding-top: 5vw; */
+}
+
+.bonus h2 {
+  font-family: "Anton Regular", system-ui;
+  font-size: 1.75em;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.bonus .item {
+  width: 80vw;
+  height: 9vh;
+  border: solid 2px #ffbd59;
+  border-radius: 2vw;
+  margin: 1vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bonus .item p {
+  margin-left: 5vw;
+}
+
+.bonus .item p::before {
+  content: "\2713";
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.5em;
+  width: 1.5em;
+  /* margin-left: -1em; */
+}
+
+.bonus .item {
+  background-color: #000;
+  color: #fff;
+  padding: 1px 1px;
+  border: 3px solid transparent;
+  /* border-image: linear-gradient(45deg, #ffde59, #ff904d) 1; */
+  border-radius: 15px;
+  /* text-transform: uppercase; */
+  margin-top: 2vh;
+  /* font-weight: bold; */
+  font-size: 1em;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  position: relative; /* Ensure ::before and ::after behave correctly */
+}
+
+.bonus .item::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: linear-gradient(90deg, #ffde597e, #ff914d74);
+  z-index: -1;
+  transition: transform 0.3s;
+  border-radius: 15px;
+}
+
+.bonus .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 5px;
+}
 
 /* ================================================= */
 
