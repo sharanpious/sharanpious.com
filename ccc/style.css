@@ -333,16 +333,17 @@ body {
 /* What you get */
 
 .you-get {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-family: Arial, sans-serif;
   /* font-weight: bold; */
   margin-top: 20px;
   font-size: 1.4em;
+  margin: 20px 5% 0 5%;
   line-height: 1.5;
-  padding: 0 5vw;
+  /* padding-top: 5vw; */
 }
 
 .you-get h2 {
@@ -356,10 +357,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
 }
 
 .heading-ccc {
+  margin-bottom: 0;
   position: relative;
   top: -5vw;
 }
@@ -368,13 +370,22 @@ body {
   font-size: 6.5vw;
 }
 
-.content8 {
-  width: 100%;
+.content7 {
+  width: 90%;
   height: 50vh;
   border-radius: 10px;
+  background: url("../Images/test_placeholder.png") no-repeat center center;
+  background-size: cover;
+  margin-left: 5%;
 }
 
-.item {
+/* .content8 {
+  width: 80%;
+  height: 50vh;
+  border-radius: 10px;
+} */
+
+.you-get .item {
   width: 80vw;
   height: 9vh;
   border: solid 2px #ffbd59;
@@ -385,11 +396,11 @@ body {
   justify-content: flex-start;
 }
 
-.item p {
+.you-get .item p {
   margin-left: 5vw;
 }
 
-.item p::before {
+.you-get .item p::before {
   content: "\2713";
   color: #ffffff;
   display: inline-block;
@@ -398,7 +409,7 @@ body {
   /* margin-left: -1em; */
 }
 
-.item {
+.you-get .item {
   background-color: #000;
   color: #fff;
   padding: 1px 1px;
@@ -414,7 +425,7 @@ body {
   position: relative; /* Ensure ::before and ::after behave correctly */
 }
 
-.item::before {
+.you-get .item::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -427,7 +438,7 @@ body {
   border-radius: 15px;
 }
 
-.item::after {
+.you-get .item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -489,7 +500,7 @@ body {
 /* Everything */
 
 .everything h1 {
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 .everything {
@@ -513,7 +524,6 @@ body {
   fill: rgb(255, 189, 89);
   vertical-align: middle;
 }
-
 
 
 /* ================================================= */
