@@ -578,24 +578,33 @@ body {
 /* ================================================= */
 
 /* Everything */
+.everything {
+  margin: 0 5vw;
+}
+.everything p{
+  font-family: Arial, sans-serif;
+  /* font-weight: bold; */
+  /* margin-top: 20px; */
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 5vw;
+}
 
 .everything h1 {
   font-size: 2em;
 }
 
-.everything {
-  font-family: Arial, sans-serif;
-  /* font-weight: bold; */
-  margin-top: 20px;
-  font-size: 2.1em;
-  line-height: 1.5;
-  padding: 0 5vw;
+.everything .high {
+  display: grid;
+  /* grid-template-rows: 1fr; */
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
 }
 
 .item {
   border: none;
   border-radius: 0;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
 }
 
 .item svg {
