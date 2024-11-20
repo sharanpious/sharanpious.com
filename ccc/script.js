@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   faqItems.forEach((item) => {
     item.querySelector(".faq-question").addEventListener("click", function () {
       // Close any currently open FAQ item
-      faqItems.forEach((el) => {
-        if (el !== item) {
-          el.classList.remove("active");
-          const answer = el.querySelector(".faq-answer");
-          answer.style.maxHeight = "0";
-          answer.style.opacity = "0";
-        }
-      });
+      // faqItems.forEach((el) => {
+      //   if (el !== item) {
+      //     el.classList.remove("active");
+      //     const answer = el.querySelector(".faq-answer");
+      //     answer.style.maxHeight = "0";
+      //     answer.style.opacity = "0";
+      //   }
+      // });
 
       // Toggle the clicked FAQ item
       item.classList.toggle("active");

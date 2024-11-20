@@ -66,6 +66,14 @@ p {
   text-transform: capitalize;
 }
 
+.white {
+  color: #fff;
+}
+
+.side {
+  padding: 0 5%;
+}
+
 .top-1 .title {
   display: flex;
   align-self: center;
@@ -168,10 +176,8 @@ p {
 }
 
 .left .image-landing {
-  width: 100%;
-  height: 250px;
-  background: url("../Images/test_placeholder.png") no-repeat center center;
-  background-size: cover;
+  width: 80%;
+  height: 50%;
   border-radius: 10px;
 }
 
@@ -293,7 +299,7 @@ p {
 }
 
 .image-grid .image1 {
-  width: 30vw;
+  width: 20vw;
   height: 30vh;
   background: url("../Images/test_placeholder.png") no-repeat center center;
   background-size: cover;
@@ -301,7 +307,7 @@ p {
 }
 
 .image-grid .image2 {
-  width: 30vw;
+  width: 20vw;
   height: 30vh;
   background: url("../Images/test_placeholder.png") no-repeat center center;
   background-size: cover;
@@ -309,7 +315,7 @@ p {
 }
 
 .image-grid .image3 {
-  width: 30vw;
+  width: 20vw;
   height: 30vh;
   background: url("../Images/test_placeholder.png") no-repeat center center;
   background-size: cover;
@@ -317,7 +323,7 @@ p {
 }
 
 .image-grid .image4 {
-  width: 30vw;
+  width: 20vw;
   height: 30vh;
   background: url("../Images/test_placeholder.png") no-repeat center center;
   background-size: cover;
@@ -384,9 +390,44 @@ p {
   width: 90%;
   height: 50vh;
   border-radius: 10px;
+  /* background: url("../Images/test_placeholder.png") no-repeat center center;
+  background-size: cover; */
+  margin-left: 5%;
+}
+
+.image7 {
   background: url("../Images/test_placeholder.png") no-repeat center center;
   background-size: cover;
-  margin-left: 5%;
+}
+
+.image8 {
+  background: url("../Images/Screenshot 2024-09-11 at 10.22.55 PM.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image9 {
+  background: url("../Images/Screenshot 2024-09-11 at 10.22.44 PM.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image10 {
+  background: url("../Images/test_placeholder.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image11 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Screenshot 2024-09-11 at 10.13.11 PM.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image11::after {
+  content: "?";
+  position: relative;
+  top: 15%;
+  left: 45%;
+  width: 100%;
+  height: 100%;
+  font-size: 10vw;
 }
 
 /* .content8 {
@@ -479,6 +520,21 @@ p {
   font-weight: 200;
   text-transform: capitalize;
   text-align: start;
+}
+
+.image12 {
+  background: url("../Images/RICA Funnel Calculator.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image13 {
+  background: url("../Images/Screenshot 2024-09-11 at 10.04.25 PM.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image14 {
+  background: url("../Images/Screenshot 2024-09-11 at 10.05.41 PM.png") no-repeat center center;
+  background-size: cover;
 }
 
 .bonus .item {
@@ -593,6 +649,7 @@ p {
 .everything {
   margin: 0 5vw;
 }
+
 .everything p {
   font-family: Arial, sans-serif;
   /* font-weight: bold; */
@@ -809,7 +866,8 @@ section.join-now::before {
   /* FAQ Item */
   .faq-item {
     padding: 5px 0;
-    transition: max-height 0.6s ease-out, opacity 0.5s ease-out, border-bottom 0.3s ease-out;
+    transition: max-height 0.6s ease-out, opacity 0.5s ease-out,
+      border-bottom 0.3s ease-out;
   }
 
   /* Wrapper for question and answer */
@@ -877,7 +935,6 @@ section.join-now::before {
   }
 }
 
-
 /* ================================================= */
 
 /* Footer */
@@ -898,6 +955,16 @@ footer .info {
   align-items: center;
   gap: 30%;
   font-size: 1.3em;
+}
+
+footer .info a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+footer .info a:hover {
+  color: #ff904d;
 }
 
 /* ================================================= */
