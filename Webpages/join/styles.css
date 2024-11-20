@@ -150,7 +150,7 @@ footer .info {
 footer .info .logo {
   width: 200px;
   height: 100px;
-  background: url(../../Images/logo.png) no-repeat;
+  background: url(../Images/logo.png) no-repeat;
   background-size: contain;
   margin-right: auto;
 }

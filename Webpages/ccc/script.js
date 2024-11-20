@@ -2,22 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const boxes = document.querySelectorAll(".join-now1 .box");
   const shadows = document.querySelectorAll(".join-now1 .shadow");
   const faqItems = document.querySelectorAll(".faq-item");
+  const scrollButton = document.getElementById("scroll-button");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > window.innerHeight) {
+      scrollButton.classList.add("show");
+    } else {
+      scrollButton.classList.remove("show");
+    }
+  });
+
+  // FAQ Toggle functionality
   faqItems.forEach((item) => {
     item.querySelector(".faq-question").addEventListener("click", function () {
-      // Close any currently open FAQ item
-      // faqItems.forEach((el) => {
-      //   if (el !== item) {
-      //     el.classList.remove("active");
-      //     const answer = el.querySelector(".faq-answer");
-      //     answer.style.maxHeight = "0";
-      //     answer.style.opacity = "0";
-      //   }
-      // });
-
       // Toggle the clicked FAQ item
       item.classList.toggle("active");
       const answer = item.querySelector(".faq-answer");
+
       if (item.classList.contains("active")) {
         answer.style.maxHeight = answer.scrollHeight + "px";
         answer.style.opacity = "1";
@@ -27,14 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
+
+  // Hover effect for boxes
   boxes.forEach((box, index) => {
     box.addEventListener("mouseenter", function () {
-      shadows[index].style.transform = "scale(1)";
+      if (shadows[index]) {
+        shadows[index].style.transform = "scale(1)";
+      }
     });
 
     box.addEventListener("mouseleave", function () {
-      shadows[index].style.transform = "scale(0.9)";
+      if (shadows[index]) {
+        shadows[index].style.transform = "scale(0.9)";
+      }
     });
   });
 });

@@ -29,6 +29,38 @@ p {
   position: relative;
 }
 
+.scroll {
+  position: fixed;
+  bottom: -40px; /* Initially hidden below the viewport */
+  right: 20px;
+  opacity: 0; /* Invisible by default */
+  visibility: hidden; /* Ensures it doesn't interfere with clicks when hidden */
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: rgba(255, 255, 255);
+  padding: 10px 12px;
+  border: none;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0s ease-in-out 0.5s;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.scroll:hover {
+  color: black;
+  cursor: pointer;
+  /* transform: scale(1.1); Gently enlarges on hover */
+  background: linear-gradient(-45deg, #ffde59, #ff904d); /* Smooth gradient */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.scroll.show {
+  bottom: 20px; /* Move it up into view */
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Ensure it's clickable */
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0s ease-in-out; /* No delay when showing */
+}
+
 .border {
   border: 3px solid #ff914d;
   border-radius: 10px;
@@ -401,12 +433,14 @@ p {
 }
 
 .image8 {
-  background: url("../Images/Screenshot 2024-09-11 at 10.22.55 PM.png") no-repeat center center;
+  background: url("../Images/Screenshot 2024-09-11 at 10.22.55 PM.png")
+    no-repeat center center;
   background-size: cover;
 }
 
 .image9 {
-  background: url("../Images/Screenshot 2024-09-11 at 10.22.44 PM.png") no-repeat center center;
+  background: url("../Images/Screenshot 2024-09-11 at 10.22.44 PM.png")
+    no-repeat center center;
   background-size: cover;
 }
 
@@ -416,7 +450,9 @@ p {
 }
 
 .image11 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Screenshot 2024-09-11 at 10.13.11 PM.png") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/Screenshot 2024-09-11 at 10.13.11 PM.png") no-repeat center
+      center;
   background-size: cover;
 }
 
@@ -471,7 +507,7 @@ p {
   margin-top: 2vh;
   /* font-weight: bold; */
   font-size: 1em;
-  cursor: pointer;
+
   /* transition: background-color 0.3s ease, color 0.3s ease; */
   position: relative; /* Ensure ::before and ::after behave correctly */
 }
@@ -523,17 +559,20 @@ p {
 }
 
 .image12 {
-  background: url("../Images/RICA Funnel Calculator.png") no-repeat center center;
+  background: url("../Images/RICA Funnel Calculator.png") no-repeat center
+    center;
   background-size: cover;
 }
 
 .image13 {
-  background: url("../Images/Screenshot 2024-09-11 at 10.04.25 PM.png") no-repeat center center;
+  background: url("../Images/Screenshot 2024-09-11 at 10.04.25 PM.png")
+    no-repeat center center;
   background-size: cover;
 }
 
 .image14 {
-  background: url("../Images/Screenshot 2024-09-11 at 10.05.41 PM.png") no-repeat center center;
+  background: url("../Images/Screenshot 2024-09-11 at 10.05.41 PM.png")
+    no-repeat center center;
   background-size: cover;
 }
 
@@ -572,7 +611,7 @@ p {
   margin-top: 2vh;
   /* font-weight: bold; */
   font-size: 1em;
-  cursor: pointer;
+
   /* transition: background-color 0.3s ease, color 0.3s ease; */
   position: relative; /* Ensure ::before and ::after behave correctly */
 }
@@ -960,11 +999,10 @@ footer .info {
 footer .info a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.3s ease;
 }
 
 footer .info a:hover {
-  color: #ff904d;
+  text-decoration: underline;
 }
 
 /* ================================================= */

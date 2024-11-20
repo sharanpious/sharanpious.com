@@ -383,7 +383,7 @@
     margin-top: 2vh;
     /* font-weight: bold; */
     font-size: 1em;
-    cursor: pointer;
+
     /* transition: background-color 0.3s ease, color 0.3s ease; */
     position: relative; /* Ensure ::before and ::after behave correctly */
   }
@@ -469,7 +469,7 @@
     margin-top: 2vh;
     /* font-weight: bold; */
     font-size: 1em;
-    cursor: pointer;
+
     /* transition: background-color 0.3s ease, color 0.3s ease; */
     position: relative; /* Ensure ::before and ::after behave correctly */
   }

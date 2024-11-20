@@ -3,22 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./Initial_styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./small_styles.css" />
-    <link rel="stylesheet" href="./medium_styles.css" />
-    <link rel="stylesheet" href="./large_styles.css" />
-    <link rel="stylesheet" href="./extra_large_styles.css" />
+    <link href="./ccc/Initial_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./ccc/small_styles.css" />
+    <link rel="stylesheet" href="./ccc/medium_styles.css" />
+    <link rel="stylesheet" href="./ccc/large_styles.css" />
+    <link rel="stylesheet" href="./ccc/extra_large_styles.css" />
     <title>Copy Call Challenge | Sharan Pious Marketing</title>
     <link
       rel="icon"
-      href="../Images/logoIconBackgroundRemoved.png"
+      href="./Images/logoIconBackgroundRemoved.png"
       type="image/x-icon"
     />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MBZSZCTQ");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MBZSZCTQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <main class="wrapper">
+      <!-- Scroll Button -->
+      <button
+        id="scroll-button"
+        class="scroll"
+        onclick="
+  document.querySelector('#landing').scrollIntoView({
+    behavior: 'smooth',
+  });
+"
+      >
+        <svg
+          style="transform: rotate(-90deg) translateX(-4px)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up"
+        >
+          <polyline points="12 19 19 12 12 5"></polyline>
+        </svg>
+      </button>
       <!-- Landing Page Content -->
-      <section class="landing-page">
+      <section id="landing" class="landing-page">
         <div class="bg-image"></div>
         <div class="right top-1">
           <!-- Title -->
@@ -64,7 +114,7 @@
           </video> -->
           <video
             class="image-landing"
-            src="../Videos/VSL-v1.mp4"
+            src="./Videos/VSL-v1.mp4"
             autoplay
             loop
             controls
@@ -88,7 +138,7 @@
       <section class="missing-strategy">
         <div align="center" class="top">
           <img
-            src="../../Images/compass.svg"
+            src="./Images/compass.svg"
             alt="Flat Compass Icon"
             loading="lazy"
             class="icon fade animatable"
@@ -1129,7 +1179,9 @@
               />
             </g>
           </svg>
-          <p class="content1">Lifetime Access to all 5 days of recording <strong>($500)</strong></p>
+          <p class="content1">
+            Lifetime Access to all 5 days of recording <strong>($500)</strong>
+          </p>
         </div>
         <div class="high">
           <svg
@@ -1193,7 +1245,7 @@
             </button>
           </a>
         </div>
-        <br>
+        <br />
         <div class="text" align="center">
           (This will take you to a calendar page to pick a 30-min time slot that
           best suits you)
@@ -1207,17 +1259,17 @@
         </h1>
         <br />
         <p><strong>The Price will increase every week.</strong></p>
-        <br>
+        <br />
         <p>
           This is because the demand for the CCC will exceed the no. of clients
           I can give value for the same price.
         </p>
-        <br>
+        <br />
         <p>
           Which means that this offer might not be available for the same price
           next week.
         </p>
-        <br>
+        <br />
         <p>Grab it now while it's still there.</p>
       </section>
 
@@ -1227,37 +1279,55 @@
           5 Limited Tickets
         </h1>
         <p style="padding-top: 30px">
-          <strong>I can only handle a max of 5 customers at once.  </strong>
+          <strong>I can only handle a max of 5 customers at once. </strong>
         </p>
-        <br>
+        <br />
         <p>
-          The CCC is a 1 on 1 personalized program with me for each business.  
+          The CCC is a 1 on 1 personalized program with me for each business.
         </p>
-        <br>
+        <br />
         <p>
-          That is why I can’t handle more than 5 clients without sacrificing quality.  
+          That is why I can’t handle more than 5 clients without sacrificing
+          quality.
         </p>
-        <br>
+        <br />
         <p>Join today to get in before the gates are closed!</p>
       </section>
 
       <!-- Final Note -->
       <section class="final-note">
-        <hr class="line">
+        <hr class="line" />
         <h2 class="heading-final">FINAL NOTE:</h2>
-        <p>If I’m being real with you, </p>
-        <br>
-        <p>Most marketers charge thousands of dollars for everything which I’m about to give you...</p>
-        <br>
-        <p>But I’m giving you the full marketing audit for Free on the first call.</p>
-        <br>
-        <p>You get your strategy risk-free since you get to decide if you want to continue working with me.</p>
-        <br>
-        <p>But because you are one of my first 5 clients, you get all this Free for a limited time… </p>
-        <br>
-        <p>All you have to do is give me real feedback and a killer review if you feel I deserve it.</p>
-        <br>
-        <p>Just click the button below & schedule a time with me to get started.</p>
+        <p>If I’m being real with you,</p>
+        <br />
+        <p>
+          Most marketers charge thousands of dollars for everything which I’m
+          about to give you...
+        </p>
+        <br />
+        <p>
+          But I’m giving you the full marketing audit for Free on the first
+          call.
+        </p>
+        <br />
+        <p>
+          You get your strategy risk-free since you get to decide if you want to
+          continue working with me.
+        </p>
+        <br />
+        <p>
+          But because you are one of my first 5 clients, you get all this Free
+          for a limited time…
+        </p>
+        <br />
+        <p>
+          All you have to do is give me real feedback and a killer review if you
+          feel I deserve it.
+        </p>
+        <br />
+        <p>
+          Just click the button below & schedule a time with me to get started.
+        </p>
       </section>
 
       <!-- Join Now - 1 -->
@@ -1299,7 +1369,7 @@
 
       <!-- FAQ -->
       <section class="FAQ-section">
-        <div class="faq-wrapper">
+        <div align="center" class="faq-wrapper">
           <div class="faq-container">
             <div class="btn-front">
               <h1 class="title">Frequently Asked Questions</h1>
@@ -1425,16 +1495,19 @@
         </div>
       </section>
 
-      <hr class="line">
+      <hr class="line" />
 
       <footer>
         <div class="info">
           <div class="logo"></div>
-          <p><a href="../Terms-and-Conditions/index.html">TERMS</a> | <a href="../Privacy-Policy/index.html">PRIVACY</a></p>
+          <p>
+            <a href="./Terms-and-Conditions/index.html">TERMS</a> |
+            <a href="./Privacy-Policy/index.html">PRIVACY</a>
+          </p>
         </div>
       </footer>
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./ccc/script.js"></script>
   </body>
 </html>
