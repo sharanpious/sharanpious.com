@@ -58,7 +58,13 @@
   }
 
   .top-1 {
-    margin: 30% 10% 0 10%;
+    margin: 35% 20% 0 20%;
+  }
+
+  .left {
+    position: relative;
+    top: -20%;
+    left: -5%;
   }
 
   .title {
@@ -70,15 +76,25 @@
 
   .top-1 .title {
     display: block;
-    align-self: center;
+    align-self: left;
     position: absolute;
     font-size: 4em;
-    left: 30%;
-    top: -4%;
+    left: 11%;
+    top: 10%;
   }
 
   .top-1 .btn {
     text-align: left;
+    position: absolute;
+    top: 75%;
+    right: 10%;
+  }
+
+  .top-1 .text {
+    position: absolute;
+    top: 87%;
+    right: 12%;
+    font-size: small;
   }
 
   .cursive {
@@ -180,18 +196,12 @@
     color: #000;
   }
 
-  .left .image-landing {
-    width: 90%;
-    height: 250px;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  .offer {
-    margin-top: 20px;
+  .top-1 .offer {
+    margin-top: 5%;
     font-size: 1.4em;
     line-height: 1.2;
+    position: relative;
+    left: -10%;
   }
 
   .join-msg {
@@ -250,6 +260,19 @@
     display: block;
   }
 
+  .missing-strategy .offer {
+    margin-top: 5%;
+    font-size: 1.4em;
+    line-height: 1.2;
+    position: relative;
+    left: 0%;
+  }
+
+  .missing-strategy .text {
+    position: relative;
+    left: 15%;
+  }
+
   .missing-strategy .content {
     font-family: Arial, sans-serif;
     font-weight: lighter;
@@ -273,72 +296,88 @@
   }
 
   /* What's in it for me */
-  .profile {
-    width: 50vw;
-    height: 50vw;
-    border-radius: 50%;
-    background: url("../Images/before_ccc.png") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    left: 25vw;
-  }
-
   .for-me {
     font-family: Arial, sans-serif;
     /* font-weight: bold; */
-    margin-top: 20px;
+    margin-top: 10vw;
     font-size: 1.4em;
     line-height: 1.5;
     padding: 0 5vw;
   }
 
+  .for-me .profile {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background: url("../Images/before_ccc.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    left: 0vw;
+  }
+
+  .for-me .touch {
+    position: relative;
+    top: 1vw;
+    left: 2vw;
+    width: 55vw;
+  }
+
+  .for-me h2 {
+    font-family: "Anton Regular", system-ui;
+    font-size: 1.75em;
+    font-weight: 200;
+    text-transform: capitalize;
+    text-align: start;
+  }
+
+  .for-me .about {
+    position: relative;
+    left: 30vw;
+    top: -30vw;
+    width: 55vw;
+  }
+
+  .for-me .frame {
+    position: relative;
+    top: -60vh;
+  }
+
   .test_6p6f {
     letter-spacing: 0.8vw;
-    font-size: 10vw;
+    font-size: 5vw;
     font-weight: lighter;
   }
 
-  .image-grid {
+  .for-me .content-for-me {
+    padding: 0 40vw 0 0;
+  }
+
+  .for-me .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    margin-left: 5vw;
+    margin-left: 0;
+    width: 10vw;
+    position: relative;
+    top: -33vw;
+    left: 10vw;
   }
 
-  .image-grid .image1 {
-    width: 30vw;
-    height: 30vh;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
+  .for-me .pic-side {
+    position: relative;
+    top: -25vw;
+    left: -34vw;
   }
 
-  .image-grid .image2 {
-    width: 30vw;
-    height: 30vh;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  .image-grid .image3 {
-    width: 30vw;
-    height: 30vh;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
-  }
-
-  .image-grid .image4 {
-    width: 30vw;
-    height: 30vh;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
+  .for-me .pic-side-text {
+    position: relative;
+    top: -80vw;
+    left: 23vw;
+    width: 70vw;
   }
 
   .image5 {
-    width: 40vw;
+    width: 20vw;
     height: 50vh;
     background: url("../Images/before-img.jpg") no-repeat center top;
     background-size: cover;
@@ -346,7 +385,7 @@
   }
 
   .image6 {
-    width: 40vw;
+    width: 20vw;
     height: 50vh;
     background: url("../Images/fitness_after.jpeg.jpg") no-repeat center top;
     background-size: cover;
@@ -366,6 +405,8 @@
     font-size: 1.4em;
     margin: 20px 5% 0 5%;
     line-height: 1.5;
+    position: absolute;
+    top: 860%;
     /* padding-top: 5vw; */
   }
 
@@ -376,11 +417,25 @@
     text-transform: capitalize;
   }
 
+  .you-get .sub-title {
+    text-align: center;
+  }
+
   .day-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-bottom: 5vw;
     /* margin-left: 5vw; */
+  }
+
+  .you-get .day1 {
+    margin-top: 30vh;
+  }
+
+  .content7 {
+    position: relative;
+    top: -3vh;
   }
 
   .heading-ccc {
@@ -389,17 +444,14 @@
     top: -5vw;
   }
 
-  .more {
-    font-size: 6.5vw;
+  .you-get .heading-ccc {
+    margin-bottom: 0;
+    position: relative;
+    top: -2vw;
   }
 
-  .content7 {
-    width: 90%;
-    height: 50vh;
-    border-radius: 10px;
-    background: url("../Images/test_placeholder.png") no-repeat center center;
-    background-size: cover;
-    margin-left: 5%;
+  .more {
+    font-size: 6.5vw;
   }
 
   /* .content8 {
@@ -409,7 +461,7 @@
 } */
 
   .you-get .item {
-    width: 80vw;
+    width: 40vw;
     height: 9vh;
     border: solid 2px #ffbd59;
     border-radius: 2vw;
@@ -479,9 +531,8 @@
   .bonus {
     font-family: Arial, sans-serif;
     /* font-weight: bold; */
-    margin-top: 20px;
     font-size: 1.4em;
-    margin: 20px 5% 0 5%;
+    margin: 10vw 5% 0 5%;
     line-height: 1.5;
     /* padding-top: 5vw; */
   }
@@ -494,8 +545,26 @@
     text-align: start;
   }
 
+  .bonus .cursive {
+    margin-bottom: 0;
+    position: relative;
+    top: -2vw;
+  }
+
+  .bonus .bonus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 5vw;
+    /* margin-left: 5vw; */
+  }
+
+  .bonus .bonus1 {
+    margin-top: 10vh;
+  }
+
   .bonus .item {
-    width: 80vw;
+    width: 40vw;
     height: 9vh;
     border: solid 2px #ffbd59;
     border-radius: 2vw;
@@ -587,6 +656,10 @@
 
   /* Golden Ticket */
 
+  .golden-ticket {
+    height: 100vh;
+  }
+
   .golden-ticket h1 {
     font-size: 3.5em;
   }
@@ -602,10 +675,35 @@
 
   /* ================================================= */
 
+  /* Final Note */
+
+  .final-note .line {
+    margin-left: -5%;
+    margin-bottom: 5%;
+    width: 105vw;
+  }
+  .final-note {
+    font-family: Arial, sans-serif;
+    /* font-weight: bold; */
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: -5% 5% 5% 5%;
+  }
+
+  /* ================================================= */
   /* Everything */
   .everything {
     margin: 0 5vw;
   }
+
+  .everything-top {
+    margin-top: 90%;
+  }
+
+  .everything-bottom {
+    margin-top: -10%;
+  }
+
   .everything p {
     font-family: Arial, sans-serif;
     /* font-weight: bold; */
@@ -614,9 +712,16 @@
     /* padding: 0 5vw; */
   }
 
-  .everything h1 {
+  .everything-top h1 {
     font-size: 4em;
     line-height: 14vw;
+    margin-left: -35%;
+  }
+
+  .everything-bottom h1 {
+    font-size: 4em;
+    line-height: 14vw;
+    margin-left: -45%;
   }
 
   .everything .high {
@@ -721,6 +826,11 @@ section.join-now::before {
     height: 100vh;
   }
 
+  .join-now1 .text {
+    position: relative;
+    bottom: -420%;
+  }
+
   .join-now1 .background {
     position: relative;
     top: 0;
@@ -739,8 +849,8 @@ section.join-now::before {
     z-index: 1;
     position: relative;
     top: -90vh;
-    left: 10vw;
-    width: 80%;
+    left: 21.125vw;
+    width: 52.5%;
     height: 80%;
     border: none;
     border-radius: calc(20px + (100vw - 98vw) / 2);
@@ -754,8 +864,8 @@ section.join-now::before {
     z-index: 2;
     position: relative;
     top: -167.5vh;
-    left: 12.5vw;
-    width: 75%;
+    left: 22.5vw;
+    width: 50%;
     height: 75%;
     border: 2px solid #ffde59;
     border-radius: 2vw;
@@ -899,18 +1009,35 @@ section.join-now::before {
     background-color: #000000;
     color: #ffffff;
     padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 13vh;
+    margin: 0;
+    /* text-align: center; */
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .line {
+    padding: 0%;
+    margin: 0%;
   }
 
   footer .info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 30%; */
     font-size: 1.3em;
+  }
+
+  footer .info .logo {
+    width: 200px;
+    height: 100px;
+    background: url(../Images/logo.png) no-repeat;
+    background-size: contain;
+    margin-right: auto;
+  }
+
+  footer .info p {
+    margin: 0;
+    margin-left: auto;
   }
 
   /* ================================================= */
