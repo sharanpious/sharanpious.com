@@ -1,14 +1,19 @@
 /* styles.css */
-
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
   scroll-padding-top: 124px;
   scroll-behavior: smooth;
+}
+
+h1 {
+  word-spacing: 20px;
 }
 
 *,
