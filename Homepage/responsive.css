@@ -1,5 +1,11 @@
 /* Media queries for responsiveness */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Small devices (phones, 0px and up) */
 @media (max-width: 600px) {
   .top {
@@ -565,7 +571,7 @@
   .navbar a {
     font-size: 1em;
   }
-  
+
   .test_2 {
     width: 15vw;
     height: 8vh;
@@ -578,7 +584,7 @@
   #test {
     height: 80px;
   }
-  
+
   .about,
   .pic,
   .pic_in,
@@ -593,7 +599,7 @@
     margin: 10px 0;
     padding: 10px;
   }
-  
+
   .myself {
     margin-top: 50vh;
   }
