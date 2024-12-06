@@ -1,12 +1,66 @@
 body {
-    background: #fff;
-    color: #000;
+    background: #ffffff !important;
+    color: #000 !important;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 28px;
     margin: 0
 }
 
+header {
+    height: 20vh;
+    background-color: black !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo1 {
+    height: 100px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-image: url("../Images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back-btn {
+    height: 50px;
+    width: 150px;
+    margin-right: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #ffbd59;
+    color: #000000;
+}
+
+.redirect {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 100px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
 h1 {
     font-size: 40px;
     line-height: 60px
@@ -22,6 +76,7 @@ h2 {
 }
 
 h3 {
+    color: #000000 !important;
     font-size: 24px;
     line-height: 36px
 }
@@ -113,7 +168,7 @@ a[rel~=nofollow]:hover {
     display: inline-block;
     padding: 0;
     margin: 0 8px 8px 0;
-    color: #fff
+    color: #000000
 }
 
 .translations-list-container .translations-list .translations-list-item a {
@@ -122,17 +177,17 @@ a[rel~=nofollow]:hover {
 }
 
 .translations-list-container .translations-list .translations-list-item a.active {
-    color: #fff;
+    color: #000000;
     background: #334055
 }
 
 .translations-content-container {
     padding-top: 8px;
-    border-top: 1px solid #eee
+    /* border-top: 1px solid #eee */
 }
 
 .footer {
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
     margin: 32px 0 0;
     padding: 16px 0
 }

@@ -154,10 +154,10 @@
   }
 
   .ccc-btn {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffbd59;
+    color: #000000;
     padding: 10px 30px;
-    border: 4px solid transparent;
+    /* border: 4px solid transparent; */
     /* border-image: linear-gradient(45deg, #ffde59, #ff904d) 1; */
     border-radius: 1vw;
     text-transform: uppercase;
@@ -169,20 +169,20 @@
     position: relative; /* Ensure ::before and ::after behave correctly */
   }
 
-  .ccc-btn::before {
+  /* .ccc-btn::before {
     content: "";
     position: absolute;
     top: -7px;
     left: -7px;
     width: calc(100% + 14px);
     height: calc(100% + 14px);
-    background: linear-gradient(90deg, #ffde59, #ff904d);
+    background: linear-gradient(180deg, #ffde59, #ff904d);
     z-index: -1;
     transition: transform 0.3s;
     border-radius: 1.2vw;
-  }
+  } */
 
-  .ccc-btn::after {
+  /* .ccc-btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -191,7 +191,7 @@
     height: 100%;
     z-index: 2;
     border-radius: 5px;
-  }
+  } */
 
   .ccc-btn:hover {
     background-color: #f4a2276c;
@@ -229,7 +229,16 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 1em;
-    color: #d3d3d3;
+  }
+
+  .test {
+    font-weight: 600;
+    font-size: 2vw;
+    color: #fff;
+  }
+
+  .test2 {
+    font-size: 3vw;
   }
 
   .color {
@@ -284,7 +293,7 @@
     line-height: 1.5;
   }
 
-  .missing-strategy .sub-heading {
+  .sub-heading {
     color: white;
     font-weight: bold;
   }
@@ -293,7 +302,7 @@
     font-weight: lighter;
   }
 
-  .missing-strategy strong {
+  strong {
     color: white;
   }
 
@@ -900,7 +909,6 @@ section.join-now::before {
   /* FAQ */
 
   .FAQ-section {
-
     .faq-wrapper {
       height: 100vh;
       display: flex;
@@ -936,7 +944,7 @@ section.join-now::before {
     /* FAQ Item */
     .faq-item {
       padding: 5px 0;
-      transition: max-height 0.6s ease-out, opacity 0.5s ease-out,
+      transition: max-height 0.25s ease-out, opacity 0.5s ease-out,
         border-bottom 0.3s ease-out;
     }
 

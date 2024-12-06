@@ -4,78 +4,75 @@
 
 html,
 body {
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   font-family: Arial, sans-serif;
   font-weight: 500;
+  width: 100vw;
+  height: auto;
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin: 0 !important;
+  width: 100%;
+  height: 100vh;
+  background-color: #101010;
+}
+
+.everything {
+  position: relative;
+  top: -5vh;
+}
+
+.everything .high {
+  margin-top: 0.5vw !important;
+}
+
+.everything .title {
+  font-size: 3vw;
+}
+
+.everything .content1 {
+  font-size: 1.5vw;
+}
+
+.testimonial {
+  margin-top: 5vh;
+  font-size: 1vw;
+}
+
+.extra {
+  height: 5vh;
+}
+.calender {
+  background-color: #d9d9d9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  margin-top: 4vh;
-  /* padding-top: 10px; */
-}
-
-.calender {
-  /* margin-right: 20px; */
-  padding-top: 20px;
-  position: relative;
-  top: -35px;
+  height: 100vh;
+  /* padding: 5vh 0; */
+  max-width: 50vw;
+  max-height: 100vh;
 }
 
 .calendly-inline-widget {
-  min-width: 400px;
-  height: 600px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.content {
-  background-color: #101010;
-  color: #fff;
-  padding: 20px;
-  /* border-radius: 10px; */
-  text-align: left;
-  max-width: 400px;
-}
-
-.top {
-  display: flex;
-  gap: 1vw;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 5vh;
-}
-
-.text-calender {
-  display: flex;
-  /* gap: 1vw; */
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  padding: 0 30px;
-}
-
-.logo,
-.sub-top {
-  position: relative;
-  top: 0;
-}
-
-.sub-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  display: block;
+  margin-top: 3vh;
+  position: static;
+  width: 30vw !important;
+  height: 100vh !important;
 }
 
 h1,
@@ -124,56 +121,7 @@ li:last-child {
 
 /* ================================================= */
 
-/* Footer */
-
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 20px;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.line {
-  padding: 0%;
-  margin: 0%;
-}
-
-footer .info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* gap: 30%; */
-  font-size: 1.3em;
-}
-
-footer .info .logo {
-  width: 200px;
-  height: 100px;
-  background: url(../Images/logo.png) no-repeat;
-  background-size: contain;
-  margin-right: auto;
-}
-
-footer .info p {
-  margin: 0;
-  margin-left: auto;
-  margin-top: 3%;
-}
-
-footer .info a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-footer .info a:hover {
-  color: #ff904d;
-}
-
-/* ================================================= */
-
-@media (min-width: 1100px) {
+/* @media (min-width: 1100px) {
   .container {
     flex-direction: row-reverse;
     margin-top: 7vh;
@@ -198,10 +146,8 @@ footer .info a:hover {
     color: #fff;
     text-align: left;
     font-weight: bold;
-    /* margin-bottom: 2px; */
     font-size: large;
     font-family: "Anton", sans-serif;
-    /* font-weight: 400; */
     font-style: normal;
     letter-spacing: 1px;
   }
@@ -219,4 +165,4 @@ footer .info a:hover {
     font-size: 0.9rem;
     line-height: 1.3;
   }
-}
+} */
